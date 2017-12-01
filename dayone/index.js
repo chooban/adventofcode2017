@@ -4,5 +4,7 @@ const argv = require('yargs')
   .demandOption(['c'])
   .argv;
 
-console.log(captcha(argv.captcha));
+
+console.log("Part one: " + captcha.partone(argv.captcha));
+console.log("Part two: " + captcha.parttwo(argv.captcha));
 
