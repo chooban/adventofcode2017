@@ -22,7 +22,7 @@ describe('Anagram check', () => {
   });
 
   it('abcde xyz ecdab', () => {
-    assert.equal(true, passwordcheck.check('abcde xyz ecdab'));
+    assert.equal(false, passwordcheck.check('abcde xyz ecdab'));
   });
 
   it('a ab abc abd abf abj', () => {
@@ -34,7 +34,7 @@ describe('Anagram check', () => {
   });
 
   it('oiii ioii iioi iiio', () => {
-    assert.equal(true, passwordcheck.check('oiii ioii iioi iiio'));
+    assert.equal(false, passwordcheck.check('oiii ioii iioi iiio'));
   });
 
 });
